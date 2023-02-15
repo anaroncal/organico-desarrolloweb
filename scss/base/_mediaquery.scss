@@ -1,0 +1,61 @@
+
+/* RESPONSIVE */
+@media screen and (max-width:800px) {
+    .cabecera{
+        height: 150px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 0px;
+        height: 350px;
+    }
+
+    .mobile-noimg{
+        display:none;
+    }
+
+    button, .btn-primary{
+        border-radius: 20px;
+        width:180px;
+    }
+
+    .quienes-somos-content,#somos-emprendimiento{
+        flex-direction: column;
+    }
+
+    .podcast-container{
+        @include grid(grid,repeat(1,1fr),550px);
+    }
+
+    .receta-detail{
+        @include grid(grid,100%,auto);
+        margin:20px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .quienes-somos-content{
+        div{
+            img{
+                width:200px;
+            }
+        }
+    }
+
+    #contacto, #contacto-datos div{
+        flex-direction: column;
+    }
+
+    #contacto-datos div div input, #contacto-datos div div textarea{
+        width:90%;
+    }
+
+    #contacto-mapa iframe{
+        width:100%;
+        height: 200px;
+    }
+}

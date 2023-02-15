@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@300;400;600;700&display=swap');
+
+$color-principal:#5EA608;
+$color-secundario:#DC5B1B;
+$color-neutro:#1D1D1F;
+$color-bgverde:#F8FFEF;
+$color-blanco:#fff;
+$color-border:#D9D9D9;
+$color-input:#ADCA82;
+
+$colores-hover:
+#376301,
+#c94f12;
+
+%centrar-img{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+$gradiente-img:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+$sombra:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$primary-font:'Inter', sans-serif;
+$secundary-font:'Courgette', cursive;
+
+@mixin flex($flex,$justify,$align){
+    display:$flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid($grid,$template-column,$template-rows){
+    display: $grid;
+    grid-template-columns: $template-column;
+    grid-template-rows: $template-rows;
+}
+
+%boton{
+    border-radius: 20px;
+    width:200px;
+    height: 46px;
+    cursor: pointer;
+    box-shadow: 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size:medium;
+    font-weight: bold;
+    border:none;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    &:hover{
+        font-size: large;
+    }
+}
+
+%boton-principal{
+    @extend %boton;
+    background-color: $color-principal;
+    color:$color-blanco;
+    &:hover{
+    background-color:nth($colores-hover,1);
+    }
+}
+
+%boton-secundario{
+    @extend %boton;
+    background-color: $color-secundario;
+    color:$color-blanco;
+    &:hover{
+        background-color:nth($colores-hover,2);
+    }
+}
+
+%boton-border{
+    @extend %boton;
+    border:solid 1px $color-principal;
+    width:250px;
+    color:$color-principal;
+    background-color: $color-blanco;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function:linear;
+    &:hover{
+        background-color:$color-principal;
+        color:$color-blanco;
+    }
+}
+
+%pill-hover{
+    background-color: $color-secundario;
+    color:$color-blanco;
+}
+

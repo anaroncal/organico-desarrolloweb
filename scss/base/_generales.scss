@@ -1,0 +1,51 @@
+@import "./variables";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: $primary-font;
+    color:$color-neutro;
+    h1{
+        font-weight: bold;
+    }
+    h2{
+        color:$color-secundario;
+    }
+    h3{
+        color:$color-principal;
+    }
+    p{
+        margin-bottom:0px;
+    }
+
+    section{
+        margin:50px 0px;
+        h2{
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.logo{
+    width:200px;
+}
+
+.centrado{
+    text-align: center;
+    align-items: center;
+}
+
+.btn-primary, .product-item-btn{
+    @extend %boton-principal;
+}
+
+.btn-secundary{
+    @extend %boton-secundario;
+}
+
+.btn-border{
+    @extend %boton-border;
+}

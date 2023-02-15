@@ -31,7 +31,7 @@ p{
     width:200px;
 }
 
-#features, #productos-temporada, #promos, #podcasts, #productosyservicios, #testimonios, #receta{
+.centrado{
     text-align: center;
     align-items: center;
 }
@@ -232,23 +232,23 @@ header{
     align-items: center;
 }
 
-.features-card-info{
+.f-cardinfo{
     text-align: left;
     padding-left: 10px;
 }
 
-.features-subtitle{
+.f-subtitle{
     font-weight: bold;
     color:#DC5B1B;
     font-size: 18px;
 }
 
-.features-description{
+.f-description{
     font-weight:normal;
     font-size:16px;
 }
 
-.features-subdescription{
+.f-subdescription{
     font-weight:lighter;
     font-size:14px;
 }

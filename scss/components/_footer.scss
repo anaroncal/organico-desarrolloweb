@@ -1,0 +1,34 @@
+/* FOOTER */
+
+.footer-principal{
+    padding:50px 30px;
+    background-color: #F8FFEF;
+    div{
+        ul{
+            list-style: none;
+            padding:0;
+            li{
+                a{
+                    text-decoration: none;
+                    color:#1D1D1F;
+                    &:hover{
+                        text-decoration: none;
+                        color:#DC5B1B;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rsocial{
+    display:inline-block;
+}
+
+.footer-copyright{
+    background-color:#fff;
+    color:#1D1D1F;
+    @include flex(flex,center,center);
+    text-align: center;
+    height: 60px;
+}

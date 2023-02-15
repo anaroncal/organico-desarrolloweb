@@ -1,0 +1,30 @@
+/* CABECERAS */
+.cabecera{
+    text-align: center;
+    width:100%;
+    height: 284px;
+    @extend %centrar-img;    
+    @include flex(flex,space-around,center);
+    flex-direction: column;
+    margin-top: 0px;
+    margin-top: 0px;
+    h2{
+        color:#fff;
+    }
+}
+
+.cab-nosotros{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/sobre-nosotros/cover-nosotros.png);
+}
+
+.cab-productos{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/productos/cover-productos.png);
+}
+
+.cab-vidasaludable{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vidasaludable/cover-vidasaludable.png);
+}
+
+.cab-contacto{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/contacto/cover-contacto.png);
+}
