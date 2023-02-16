@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Productos</title>
+    
+    <!--! KEYWORDS -->
+    <meta name="keywords" content="organico,online,tienda virtual,tienda saludable,alimentacion saludable,vida saludable,nutricion,trujillo,comida,mercado,frutas,verduras,hortalizas,cereales,chocolates,fresas,zanahorias,tomate,palta,papaya,naranja,lechuga,apio,beterraga,culantro,100% cacao,cacao,chocolate de la selva,obleas,bitter,grageado,yogurt natural,queso andino,quesos,frutado,quinua,kiwicha,avena,barras energeticas,granola,gourmet">
+    <!--! DESCRIPTION -->
+    <meta name="description" content="Encuentra los productos orgánicos que necesitas para mejorar la salud de tu hogar. Frutas, verduras, chocolates, lácteos, cereleas y productos medicinales. Pedidos online con opción de Delivery o Recojo en tienda.">
+    <!--! OPENGRAPH TYPE -->
+    <meta property="og:type" content="Web site">
+    <!--! OPENGRAPH TITTLE -->
+    <meta property="og:tittle" content="Orgánico Online | Productos">
+    <!--! OPENGRAPH URTL -->
+    <meta property="og:url" content="https://anaroncal.github.io/organico-desarrolloweb/pages/productos.html">
+    <!--! OPENGRAPH IMAGEN -->
+    <meta property="og:image" content="https://i.ibb.co/w7t9tQL/op-productos.jpg">
+    <!--! OPENGRAPH DESCRIPTION -->
+    <meta property="og:description" content="Encuentra los productos orgánicos que necesitas para mejorar la salud de tu hogar. Frutas, verduras, chocolates, lácteos, cereleas y productos medicinales. Pedidos online con opción de Delivery o Recojo en tienda.">
+    <!--! FAVICON -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Orgánico Online | Productos</title>
 </head>
 <body>
     <header>
@@ -51,17 +67,17 @@
             </div>
         </section>
 
-        <section id="tabs-productos" class="centrado">
-            <ul class="nav nav-pills nav-justified">
-                <li class="nav-item"> <a class="nav-link active" aria-current="#producto-frutasyhortalizas" href="#producto-frutasyhortalizas">Frutos y Hortalizas</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="#productos-chocolates" href="#productos-chocolates">Chocolates</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="#producto-lacteos" href="#producto-lacteos">Lácteos</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="productos-complementos" href="#productos-complementos">Complementos</a></li>
-            </ul>
-        </section>
-        <section id="producto-frutasyhortalizas">
-            <div class="product-row">
-                <div class="product-item">
+        <section id="productos-filtrar">
+            <div id="btnContainer" class="tabproductos centrado">
+                <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+                <button class="btn" onclick="filterSelection('producto1')"> Frutas y Hortalizas</button>
+                <button class="btn" onclick="filterSelection('producto2')"> Chocolates</button>
+                <button class="btn" onclick="filterSelection('producto3')"> Lácteos</button>
+                <button class="btn" onclick="filterSelection('producto4')"> Complementos</button>
+            </div>
+
+            <div class="container productos-tienda">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-fresas.png" alt="producto-fresas">
                     <div>
                         <h4 class="product-item-subtitle">Fresas</h4>
@@ -70,7 +86,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-zanahorias.png" alt="producto-zanahorias">
                     <div>
                         <h4 class="product-item-subtitle">Zanahorias</h4>
@@ -79,7 +95,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-tomate.png" alt="producto-tomate">
                     <div>
                         <h4 class="product-item-subtitle">Tomate cherry</h4>
@@ -88,9 +104,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-palta.png" alt="producto-palta">
                     <div>
                         <h4 class="product-item-subtitle">Palta hass</h4>
@@ -99,7 +113,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-papaya.png" alt="producto-papaya">
                     <div>
                         <h4 class="product-item-subtitle">Papaya</h4>
@@ -108,7 +122,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-naranja.png" alt="producto-naranja">
                     <div>
                         <h4 class="product-item-subtitle">Naranja</h4>
@@ -117,9 +131,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item frutasyhortalizas">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-lechuga.png" alt="producto-lechuga">
                     <div>
                         <h4 class="product-item-subtitle">Lechuga</h4>
@@ -128,7 +140,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-apio.png" alt="producto-apio">
                     <div>
                         <h4 class="product-item-subtitle">Apio</h4>
@@ -137,7 +149,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-beterraga.png" alt="producto-beterraga">
                     <div>
                         <h4 class="product-item-subtitle">Beterraga</h4>
@@ -146,9 +158,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-hierbabuema.png" alt="producto-hierbabuema">
                     <div>
                         <h4 class="product-item-subtitle">Hierba buena</h4>
@@ -157,7 +167,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-menta.png" alt="producto-menta">
                     <div>
                         <h4 class="product-item-subtitle">Menta</h4>
@@ -166,7 +176,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto1">
                     <img src="../img/productos/producto-culantro.png" alt="producto-culantro">
                     <div>
                         <h4 class="product-item-subtitle">Culantro</h4>
@@ -175,12 +185,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="productos-chocolates">
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto2">
                     <img src="../img/productos/producto-chocolatebarra.png" alt="producto-chocolatebarra">
                     <div>
                         <h4 class="product-item-subtitle">Chocolate en barra</h4>
@@ -189,7 +194,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item ">
+                <div class="filterDiv product-item producto2">
                     <img src="../img/productos/producto-obleas.png" alt="producto-obleas">
                     <div>
                         <h4 class="product-item-subtitle">Obleas 70% cacao</h4>
@@ -198,7 +203,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto2">
                     <img src="../img/productos/producto-bitter.png" alt="producto-bitter">
                     <div>
                         <h4 class="product-item-subtitle">Bitter 98% cacao</h4>
@@ -207,9 +212,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto2">
                     <img src="../img/productos/producto-grageado.png" alt="producto-grageado">
                     <div>
                         <h4 class="product-item-subtitle">Grageado</h4>
@@ -218,7 +221,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto2">
                     <img src="../img/productos/producto-monedas.png" alt="producto-monedas">
                     <div>
                         <h4 class="product-item-subtitle">Monedas</h4>
@@ -227,7 +230,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto2">
                     <img src="../img/productos/producto-chocopiña.png" alt="producto-chocopiña">
                     <div>
                         <h4 class="product-item-subtitle">Choco piña</h4>
@@ -236,12 +239,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="producto-lacteos">
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-yogurtnatural.png" alt="producto-yogurtnatural">
                     <div>
                         <h4 class="product-item-subtitle">Yogurt natural</h4>
@@ -250,7 +248,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-yogurtgriego.png" alt="producto-yogurtgriego">
                     <div>
                         <h4 class="product-item-subtitle">Yogurt griego</h4>
@@ -259,7 +257,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-yogurtfrutado.png" alt="producto-yogurtfrutado">
                     <div>
                         <h4 class="product-item-subtitle">Yogurt frutado</h4>
@@ -268,9 +266,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-quesomozarella.png" alt="producto-quesomozarella">
                     <div>
                         <h4 class="product-item-subtitle">Queso mozarella</h4>
@@ -279,7 +275,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-quesomantecoso.png" alt="producto-quesomantecoso">
                     <div>
                         <h4 class="product-item-subtitle">Queso mantecoso</h4>
@@ -288,7 +284,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-quesoricotta.png" alt="producto-quesoricotta">
                     <div>
                         <h4 class="product-item-subtitle">Queso ricotta</h4>
@@ -297,9 +293,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-quesoandino.png" alt="producto-quesoandino">
                     <div>
                         <h4 class="product-item-subtitle">Queso andino</h4>
@@ -308,7 +302,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-quesoparmesano.png" alt="producto-quesoparmesano">
                     <div>
                         <h4 class="product-item-subtitle">Queso parmesano</h4>
@@ -317,7 +311,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-quesoedam.png" alt="producto-quesoedam">
                     <div>
                         <h4 class="product-item-subtitle">Queso edam</h4>
@@ -326,9 +320,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-mantequilla.png" alt="producto-mantequilla">
                     <div>
                         <h4 class="product-item-subtitle">Mantequilla con sal</h4>
@@ -337,7 +329,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-manjar.png" alt="producto-manjar">
                     <div>
                         <h4 class="product-item-subtitle">Manjar blanco</h4>
@@ -346,7 +338,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto3">
                     <img src="../img/productos/producto-mantequillamani.png" alt="producto-mantequillamani">
                     <div>
                         <h4 class="product-item-subtitle">Mantequilla maní</h4>
@@ -355,12 +347,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="productos-complementos">
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto4">
                     <img src="../img/productos/producto-hojuelasquinua.png" alt="producto-hojuelasquinua">
                     <div>
                         <h4 class="product-item-subtitle">Hojuelas de quinua</h4>
@@ -369,7 +356,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto4">
                     <img src="../img/productos/producto-hojuelaskiwicha.png" alt="producto-hojuelaskiwicha">
                     <div>
                         <h4 class="product-item-subtitle">Hojuelas kiwicha</h4>
@@ -378,7 +365,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto4">
                     <img src="../img/productos/producto-granosavena.png" alt="producto-granosavena">
                     <div>
                         <h4 class="product-item-subtitle">Granos avena</h4>
@@ -387,9 +374,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-            </div>
-            <div class="product-row">
-                <div class="product-item">
+                <div class="filterDiv product-item producto4">
                     <img src="../img/productos/producto-granola.png" alt="producto-granola">
                     <div>
                         <h4 class="product-item-subtitle">Granola gourmet</h4>
@@ -398,7 +383,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto4">
                     <img src="../img/productos/producto-barras.png" alt="producto-barras">
                     <div>
                         <h4 class="product-item-subtitle">Barras energéticas</h4>
@@ -407,7 +392,7 @@
                         <button class="product-item-btn">¡Lo quiero!</button>
                     </div>
                 </div>
-                <div class="product-item">
+                <div class="filterDiv product-item producto4">
                     <img src="../img/productos/producto-propoleo.png" alt="producto-propoleo">
                     <div>
                         <h4 class="product-item-subtitle">Propoleo</h4>
@@ -474,5 +459,55 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+            }
+        }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("btnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[1].className = current[1].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+    </script>
+
 </body>
 </html>

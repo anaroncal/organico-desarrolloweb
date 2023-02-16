@@ -88,6 +88,11 @@
             list-style-image: url('../img/iconos/icon-check.svg');
         }
     }
+    div{
+        img{
+            padding:15px;
+        }
+    }
 }
 
 #team{
@@ -155,7 +160,7 @@
         border-radius: 8px;
         box-shadow: $sombra;
         width:320px;
-        height: 100px;
+        height: 160px;
         margin:20px;
         padding: 15px;
         @include flex(flex,center,center);
@@ -172,6 +177,7 @@
     padding-left: 10px;
     h4{
         font-size: small;
+        font-weight: bold;
     }
     p{
         font-size: smaller;
@@ -180,21 +186,39 @@
 
 /* PRODUCTOS */
 
-#tabs-productos{
+.container{
+    margin-top: 2%;
+}
+
+.productos-tienda{
     @include flex(flex,space-around,center);
-    ul{
-        list-style: none;
-        text-decoration: none;
-        li{
-            display:inline-block;
-            margin:20px;
+    flex-wrap: wrap;
+}
+
+.tabproductos{
+    @include flex(flex,space-around,center);
+    flex-wrap: wrap;
+    .btn{
+        @extend %boton;
+        border-radius: 20px;
+        border: solid 1px $color-secundario;
+        color:$color-secundario;
+        margin:20px;
+        outline: none;
+        &.active{
+            background-color:$color-secundario;
+            color:$color-blanco;
         }
     }
 }
 
-.product-row{
-    @include flex(flex,space-around,center);
-    flex-wrap: wrap;
+.filterDiv {
+    float: left;
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .product-item{
@@ -235,25 +259,6 @@
 .product-item-btn{
     padding:10px 0px;
 }
-
-.nav-pills{
-    .nav-item {
-        .nav-link{
-            border: 2px solid $color-secundario;
-            border-radius: 20px;
-            color: $color-secundario;
-            &:hover{
-                @extend %pill-hover;
-            }
-        }
-        .nav-link.active{
-            @extend %pill-hover;
-        }
-    }
-    
-}
-
-
 
 /* VIDA SALUDABLE */
 

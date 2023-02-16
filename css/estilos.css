@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat; }
 
-.btn-primary, .product-item-btn, .btn-secundary, .btn-border {
+.btn-primary, .product-item-btn, .btn-secundary, .btn-border, .tabproductos .btn {
   border-radius: 20px;
   width: 200px;
   height: 46px;
@@ -15,11 +15,13 @@
   text-align: center;
   font-size: medium;
   font-weight: bold;
-  border: none;
+  border: none; }
+
+.btn-primary, .product-item-btn, .btn-secundary {
   transition-property: font-size;
   transition-duration: 1s;
   transition-timing-function: ease-in-out; }
-  .btn-primary:hover, .product-item-btn:hover, .btn-secundary:hover, .btn-border:hover {
+  .btn-primary:hover, .product-item-btn:hover, .btn-secundary:hover {
     font-size: large; }
 
 .btn-primary, .product-item-btn {
@@ -46,10 +48,6 @@
     background-color: #5EA608;
     color: #fff; }
 
-.nav-pills .nav-item .nav-link:hover, .nav-pills .nav-item .nav-link.active {
-  background-color: #DC5B1B;
-  color: #fff; }
-
 * {
   margin: 0px;
   padding: 0px; }
@@ -57,18 +55,17 @@
 body {
   font-family: "Inter", sans-serif;
   color: #1D1D1F; }
-  body h1 {
-    font-weight: bold; }
-  body h2 {
-    color: #DC5B1B; }
-  body h3 {
-    color: #5EA608; }
-  body p {
-    margin-bottom: 0px; }
   body section {
     margin: 50px 0px; }
+    body section h1 {
+      font-weight: bold; }
     body section h2 {
-      padding-bottom: 30px; }
+      color: #5EA608; }
+    body section h3 {
+      padding-bottom: 30px;
+      color: #DC5B1B; }
+  body p {
+    margin-bottom: 0px; }
 
 .logo {
   width: 200px; }
@@ -81,7 +78,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
-.btn-primary, .product-item-btn, .btn-secundary, .btn-border {
+.btn-primary, .product-item-btn, .btn-secundary, .btn-border, .tabproductos .btn {
   border-radius: 20px;
   width: 200px;
   height: 46px;
@@ -91,11 +88,13 @@ body {
   text-align: center;
   font-size: medium;
   font-weight: bold;
-  border: none;
+  border: none; }
+
+.btn-primary, .product-item-btn, .btn-secundary {
   transition-property: font-size;
   transition-duration: 1s;
   transition-timing-function: ease-in-out; }
-  .btn-primary:hover, .product-item-btn:hover, .btn-secundary:hover, .btn-border:hover {
+  .btn-primary:hover, .product-item-btn:hover, .btn-secundary:hover {
     font-size: large; }
 
 .btn-primary, .product-item-btn {
@@ -121,10 +120,6 @@ body {
   .btn-border:hover {
     background-color: #5EA608;
     color: #fff; }
-
-.nav-pills .nav-item .nav-link:hover, .nav-pills .nav-item .nav-link.active {
-  background-color: #DC5B1B;
-  color: #fff; }
 
 /* HEADER */
 header {
@@ -178,7 +173,7 @@ header {
   background-position: center;
   background-repeat: no-repeat; }
 
-.btn-primary, .product-item-btn, .btn-secundary, .btn-border {
+.btn-primary, .product-item-btn, .btn-secundary, .btn-border, .tabproductos .btn {
   border-radius: 20px;
   width: 200px;
   height: 46px;
@@ -188,11 +183,13 @@ header {
   text-align: center;
   font-size: medium;
   font-weight: bold;
-  border: none;
+  border: none; }
+
+.btn-primary, .product-item-btn, .btn-secundary {
   transition-property: font-size;
   transition-duration: 1s;
   transition-timing-function: ease-in-out; }
-  .btn-primary:hover, .product-item-btn:hover, .btn-secundary:hover, .btn-border:hover {
+  .btn-primary:hover, .product-item-btn:hover, .btn-secundary:hover {
     font-size: large; }
 
 .btn-primary, .product-item-btn {
@@ -218,10 +215,6 @@ header {
   .btn-border:hover {
     background-color: #5EA608;
     color: #fff; }
-
-.nav-pills .nav-item .nav-link:hover, .nav-pills .nav-item .nav-link.active {
-  background-color: #DC5B1B;
-  color: #fff; }
 
 /* HOME */
 .hero {
@@ -302,6 +295,8 @@ header {
   margin: 30px 30px; }
   #somos-emprendimiento div ul {
     list-style-image: url("../img/iconos/icon-check.svg"); }
+  #somos-emprendimiento div img {
+    padding: 15px; }
 
 #team {
   background-color: #F8FFEF;
@@ -363,7 +358,7 @@ header {
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 320px;
-    height: 100px;
+    height: 160px;
     margin: 20px;
     padding: 15px;
     display: flex;
@@ -378,27 +373,42 @@ header {
   text-align: left;
   padding-left: 10px; }
   .testimonial-card-info h4 {
-    font-size: small; }
+    font-size: small;
+    font-weight: bold; }
   .testimonial-card-info p {
     font-size: smaller; }
 
 /* PRODUCTOS */
-#tabs-productos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  #tabs-productos ul {
-    list-style: none;
-    text-decoration: none; }
-    #tabs-productos ul li {
-      display: inline-block;
-      margin: 20px; }
+.container {
+  margin-top: 2%; }
 
-.product-row {
+.productos-tienda {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
+
+.tabproductos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .tabproductos .btn {
+    border-radius: 20px;
+    border: solid 1px #DC5B1B;
+    color: #DC5B1B;
+    margin: 20px;
+    outline: none; }
+    .tabproductos .btn.active {
+      background-color: #DC5B1B;
+      color: #fff; }
+
+.filterDiv {
+  float: left;
+  display: none; }
+
+.show {
+  display: block; }
 
 .product-item {
   text-align: center;
@@ -431,11 +441,6 @@ header {
 
 .product-item-btn {
   padding: 10px 0px; }
-
-.nav-pills .nav-item .nav-link {
-  border: 2px solid #DC5B1B;
-  border-radius: 20px;
-  color: #DC5B1B; }
 
 /* VIDA SALUDABLE */
 .podcast-container {
@@ -566,7 +571,7 @@ header {
     height: 200px !important; }
   #contacto-datos {
     margin-top: 10%; }
-    #contacto-datos h2 {
+    #contacto-datos h2, #contacto-datos h3 {
       text-align: center; }
     #contacto-datos div {
       flex-direction: column;
