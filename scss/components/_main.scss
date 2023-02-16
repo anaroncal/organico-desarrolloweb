@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     .features-card {
         @include flex(flex,center,center);
+        padding: 5%;
         .f-cardinfo{
             text-align: left;
             padding-left: 10px;
