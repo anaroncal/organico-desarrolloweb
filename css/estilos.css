@@ -510,7 +510,7 @@ header {
         #contacto-datos div div input:focus, #contacto-datos div div textarea:focus {
           outline: none; }
       #contacto-datos div div textarea {
-        height: 150px;
+        height: 170px;
         width: 100%;
         resize: none;
         padding-top: 5px; }
