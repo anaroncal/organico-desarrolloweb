@@ -126,7 +126,7 @@ header {
   position: sticky;
   top: 0; }
   header nav {
-    background-color: #F8FFEF; }
+    background-color: #ecf6e0; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #1D1D1F; }
@@ -219,7 +219,7 @@ header {
 /* HOME */
 .hero {
   height: 456px;
-  background-color: #F8FFEF;
+  background-color: #ecf6e0;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -509,6 +509,11 @@ header {
         padding-left: 10px; }
         #contacto-datos div div input:focus, #contacto-datos div div textarea:focus {
           outline: none; }
+      #contacto-datos div div textarea {
+        height: 150px;
+        width: 100%;
+        resize: none;
+        padding-top: 5px; }
 
 ::placeholder {
   color: #ADCA82; }
@@ -567,6 +572,9 @@ header {
     grid-template-columns: 100% !important;
     grid-template-rows: auto;
     margin: 20px; }
+    .receta-detail div {
+      margin: 10px;
+      text-align: center !important; }
   #contacto-mapa iframe {
     height: 200px !important; }
   #contacto-datos {

@@ -37,6 +37,10 @@
     .receta-detail{
         @include grid(grid,100%!important,auto);
         margin:20px;
+        div{
+            margin:10px;
+            text-align: center!important;
+        }
     }
 
     #contacto-mapa {
